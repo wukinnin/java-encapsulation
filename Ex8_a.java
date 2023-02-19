@@ -10,15 +10,20 @@ public class Ex8_a {
     public int getHours(){
         return speed;
     }
-    public int computeHours(){
-        return getDistance()/getHours();
-    }
+    public void displayTime() {
+        // multiply kilometers to manageable minutes and then divide by speed
+        int minutes = (distance * 60) / speed;
+        
+        // then get the minutes relative to an hour by modulo 60
+        int minutesFinal = minutes % 60;
 
-    public int computeMinutes(){
-        return 60/getHours();
-    }
-    public void displayTime(){
-        System.out.printf("It will take %d hour/s and %d minute/s.", computeHours(), computeMinutes());
+        // divide the minute conversion to 60 to get the amount of hours
+        int hours = minutes / 60;
+
+        System.out.print("Mimi will take ");
+        System.out.print(hours + " hour/s");
+        System.out.print(" and ");
+        System.out.print(minutesFinal + " minute/s");
     }
 
 }
