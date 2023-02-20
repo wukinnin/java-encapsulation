@@ -21,13 +21,23 @@ public class Ex7_a
         return workTime; 
     }
 
-    public int computeHours(){
-        return getWorkTime()-1; 
+    public void displayTime() {
+        // calculate total travel time by adding walk and prep time
+        int totalTravelTime = walk + prep;
+
+        // compute the amount of minutes based on work time by multiplying it by 60.
+        int totalWorkMinutes = workTime * 60;
+
+        // get the total amount of minutes by deducting the travel time (minutes) and total work minutes.
+        int totalMinutes = totalWorkMinutes - totalTravelTime;
+
+        // get the leave hour by dividing the total minutes by 60.
+        int leaveHour = totalMinutes / 60;
+
+        // get the leave minutes by solving it by modulo 60.
+        int leaveMinute = totalMinutes % 60;
+
+        System.out.printf("Juan should leave home at %d:%02d", leaveHour, leaveMinute);
     }
-    public int computeMinutes(){
-        return getPrep()-getWalk(); 
-    }
-    public void displayTime(){
-        System.out.printf("Juan should leave home at %d:%d", computeHours(), computeMinutes()); 
-    }
+
 }
