@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class testExercise1 {
+public class Exercise1_TestSumOfNnumbers {
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
@@ -10,7 +10,7 @@ public class testExercise1 {
         n=s.nextInt();
         s.close();
 
-        exercise1 j = new exercise1();
+        Exercise1_SumOfNnumbers j = new Exercise1_SumOfNnumbers();
         j.setN(n);
         j.display();
 
