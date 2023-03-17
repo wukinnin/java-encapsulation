@@ -47,14 +47,14 @@ public class Exercise4_DisplayingAmenu_FoodStore
       }
       else if(getChoice()==0)
       {
-         JOptionPane.showMessageDialog(null, "Total Cost: Php " + total);
+         JOptionPane.showMessageDialog(null, "Total Cost: Php " + total + "0");
          System.exit(0);
       }
       else
       {
          JOptionPane.showMessageDialog(null, "Invalid Option. Exiting.");
          System.exit(0);
-
+      
       }
    }
 }
