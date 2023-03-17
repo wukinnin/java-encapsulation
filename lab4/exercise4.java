@@ -52,7 +52,7 @@ public class exercise4
       }
       else
       {
-         JOptionPane.showMessageDialog(null, "Invalid Option, exiting." + total);
+         JOptionPane.showMessageDialog(null, "Invalid Option. Exiting.");
          System.exit(0);
 
       }
