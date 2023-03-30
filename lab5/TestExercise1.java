@@ -16,6 +16,7 @@ public class TestExercise1
       num1 = s.nextDouble();
       System.out.print("");
       num2 = s.nextDouble();
+      s.close();
       
       Exercise1 j = new Exercise1(letter1, letter2, num1, num2);
       j.toUppercase1();
