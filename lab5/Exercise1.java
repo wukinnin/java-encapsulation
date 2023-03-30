@@ -1,5 +1,5 @@
-import java.lang.Character.*;
-import java.lang.Math.*;
+import static java.lang.Character.*;
+import static java.lang.Math.*;
 
 public class Exercise1
 {
