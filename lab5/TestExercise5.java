@@ -47,6 +47,7 @@ public class TestExercise5 {
                break;
             default:
                System.out.println("Invalid Option. Terminating.");
+               break;
         }
         s.close();
     }
