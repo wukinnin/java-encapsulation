@@ -1,30 +1,14 @@
 import java.util.Scanner;
 public class Exercise4 {
 
-    // similar in use to Math.max()
     public static int maxNum(int num1, int num2)
     {
-        if(num1 > num2)
-        {
-            return num1;
-        }
-        else
-        {
-            return num2;
-        }
+        return Math.max(num1, num2);
     }
 
-    // similar in use to Math.max()
     public static double maxNum(double doub1, double doub2)
     {
-        if(doub1 > doub2)
-        {
-            return doub1;
-        }
-        else
-        {
-            return doub2;
-        }
+        return Math.max(doub1, doub2);
     }
 
     public static void main(String[] args) {
