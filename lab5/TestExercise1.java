@@ -5,26 +5,29 @@ public class TestExercise1
    public static void main (String[] args)
    {
       Scanner s = new Scanner(System.in);
-      char letter1, letter2;
-      double num1, num2;
+      char upper, lower;
+      double sqrt1, sqrt2;
       
-      System.out.print("");
-      letter1 = s.next().charAt(0);
-      System.out.print("");
-      letter2 = s.next().charAt(0);
-      System.out.print("");
-      num1 = s.nextDouble();
-      System.out.print("");
-      num2 = s.nextDouble();
+      // refer to object
+      Exercise1 j = new Exercise1();
+      
+      // prompt
+      System.out.print("Enter a character: ");
+      upper = s.next().charAt(0);
+      System.out.print("Enter a character: ");
+      lower = s.next().charAt(0);
+      System.out.print("Enter a number: ");
+      sqrt1 = s.nextDouble();
+      System.out.print("Enter a number: ");
+      sqrt2 = s.nextDouble();
+      System.out.println();
       s.close();
-      
-      Exercise1 j = new Exercise1(letter1, letter2, num1, num2);
-      j.toUppercase1();
-      j.toUppercase2();
-      j.sqrNum1();
-      j.sqrNum2();
-      
-      
+    
+      // display
+      System.out.println("The uppercase of " + upper + " is : " + j.toUppercase(upper));
+      System.out.println("The lowercase of " + upper + " is : " + j.toLowercase(lower));
+      System.out.println("Math.sqrt(" + String.format("%.0f", sqrt1) + ") = " + String.format("%.1f", j.toSqrt1(sqrt1)));
+      System.out.println("Math.sqrt(" + String.format("%.0f", sqrt2) + ") = " + String.format("%.1f", j.toSqrt1(sqrt2)));
       
    }
 }
